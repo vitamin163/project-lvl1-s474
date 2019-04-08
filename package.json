@@ -1,11 +1,18 @@
 {
   "name": "brain-games-vitamin",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.2.0",
+  "description": "A set of mini brain-games launched from the console",
   "main": "",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
+  "keywords": [
+    "hexlet",
+    "game",
+    "games",
+    "brain-games",
+    "console-games"
+  ],
   "files": [
     "dist"
   ],
@@ -21,5 +28,8 @@
     "@babel/core": "^7.4.3",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.4.3"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.9"
   }
 }
