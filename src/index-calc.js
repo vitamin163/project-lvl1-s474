@@ -21,12 +21,13 @@ export default () => {
     const subtractionResult = firstNumber - secondNumber;
     const multiplicationResult = firstNumber * secondNumber;
     const arrayResult = [additionResult, subtractionResult, multiplicationResult];
-    console.log(`Question: ${firstNumber} ${operator[round]} ${secondNumber}`);
+    const randomOperation = randomNumber(0, 3);
+    console.log(`Question: ${firstNumber} ${operator[randomOperation]} ${secondNumber}`);
     const answer = readlineSync.question('Your answer: ');
-    if (arrayResult[round] === +answer) {
+    if (arrayResult[randomOperation] === +answer) {
       console.log('Correct!');
-    } else if ((arrayResult[round] !== +answer)) {
-      return console.log(`${answer} is wrong answer ;(. Correct answer was ${arrayResult[round]}. \n Let's try again, ${userName}`);
+    } else if ((arrayResult[randomOperation] !== +answer)) {
+      return console.log(`${answer} is wrong answer ;(. Correct answer was ${arrayResult[randomOperation]}. \n Let's try again, ${userName}`);
     }
   }
   return console.log(`Congratulations, ${userName}!`);
