@@ -12,6 +12,10 @@ $ brain-even
 ```sh
 $ brain-calc
 ```
+## Run game "brain-gcd"
+```sh
+$ brain-gcd
+```
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/vitamin163/project-lvl1-s474)
 
