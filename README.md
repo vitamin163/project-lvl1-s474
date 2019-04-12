@@ -2,7 +2,7 @@ This is a set of mini-games launched from the console.
 These games are similar to what is commonly called "Brain Games."
 
 ## Setup
-[![asciicast](https://asciinema.org/a/5vpjfUq79m0HtDVKJrSFUtPm6.svg)](https://asciinema.org/a/tbgouenvlnklcxJSmFgsbdr2D)
+[![asciicast](https://asciinema.org/a/tbgouenvlnklcxJSmFgsbdr2D.svg)](https://asciinema.org/a/tbgouenvlnklcxJSmFgsbdr2D)
 
 ## Run game "brain-even"
 ```sh
