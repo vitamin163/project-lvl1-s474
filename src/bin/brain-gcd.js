@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import brainGcdGame from '../games/index-gcd';
+import brainGcdGame from '../games/gcd';
 
 brainGcdGame();

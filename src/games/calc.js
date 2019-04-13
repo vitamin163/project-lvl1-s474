@@ -1,7 +1,7 @@
 import getRandomNumber from '../ utilities';
 import generateGame from '..';
 
-const gameDescription = 'What is the result of the expression? \n';
+const gameDescription = 'What is the result of the expression?';
 
 const makeData = () => {
   const operators = ['+', '-', '*'];
