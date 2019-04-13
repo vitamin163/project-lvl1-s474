@@ -2,24 +2,21 @@ This is a set of mini-games launched from the console.
 These games are similar to what is commonly called "Brain Games."
 
 ## Setup
-[![asciicast](https://asciinema.org/a/tbgouenvlnklcxJSmFgsbdr2D.svg)](https://asciinema.org/a/tbgouenvlnklcxJSmFgsbdr2D)
+```sh
+$ npm install brain-games-vitamin -g
+```
 
 ## Run game "brain-even"
-```sh
-$ brain-even
-```
+[![asciicast](https://asciinema.org/a/WcBcAaC0jv6nHQLNZtVnDMqxP.svg)](https://asciinema.org/a/WcBcAaC0jv6nHQLNZtVnDMqxP)
+
 ## Run game "brain-calc"
-```sh
-$ brain-calc
-```
+[![asciicast](https://asciinema.org/a/qJ0UFnNU95JbzZO75VAJ9RzXa.svg)](https://asciinema.org/a/qJ0UFnNU95JbzZO75VAJ9RzXa)
+
 ## Run game "brain-gcd"
-```sh
-$ brain-gcd
-```
+[![asciicast](https://asciinema.org/a/T00E4wx7mYpQK7iiXGTJ4cRmy.svg)](https://asciinema.org/a/T00E4wx7mYpQK7iiXGTJ4cRmy)
+
 ## Run game "brain-progression"
-```sh
-$ brain-progression
-```
+[![asciicast](https://asciinema.org/a/IGCa5DIwRBGYhpahDZzYZzw6H.svg)](https://asciinema.org/a/IGCa5DIwRBGYhpahDZzYZzw6H)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/vitamin163/project-lvl1-s474)
 
