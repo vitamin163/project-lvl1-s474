@@ -1,20 +1,20 @@
-import { randomNumber } from '../ utilities';
-import generateGame, { numberOfRounds } from '..';
+import getRandomNumber from '../ utilities';
+import generateGame from '..';
 
-const rule = 'What is the result of the expression? \n';
+const gameDescription = 'What is the result of the expression? \n';
 
 const makeData = () => {
-  const randomOperation = randomNumber(0, numberOfRounds);
-  const firstGameNumber = randomNumber(1, 100);
-  const secondGameNumber = randomNumber(1, 100);
-  const operator = ['+', '-', '*'];
-  const question = `${firstGameNumber} ${operator[randomOperation]} ${secondGameNumber}`;
-  const additionResult = firstGameNumber + secondGameNumber;
-  const subtractionResult = firstGameNumber - secondGameNumber;
-  const multiplicationResult = firstGameNumber * secondGameNumber;
-  const arrayResult = [additionResult, subtractionResult, multiplicationResult];
-  const correctAnswer = arrayResult[randomOperation];
+  const operators = ['+', '-', '*'];
+  const randomOperation = getRandomNumber(0, operators.length);
+  const operandA = getRandomNumber(1, 100);
+  const operandB = getRandomNumber(1, 100);
+  const question = `${operandA} ${operators[randomOperation]} ${operandB}`;
+  const sumOfOperands = operandA + operandB;
+  const differenceOfOperands = operandA - operandB;
+  const productOfOperands = operandA * operandB;
+  const operations = [sumOfOperands, differenceOfOperands, productOfOperands];
+  const correctAnswer = operations[randomOperation];
   return { question, correctAnswer };
 };
 
-export default () => generateGame(rule, makeData);
+export default () => generateGame(gameDescription, makeData);

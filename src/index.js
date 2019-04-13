@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const numberOfRounds = 3;
+const numberOfRounds = 3;
 export default (rules, makeData) => {
   console.log('Welcome to the Brain Games!');
   console.log(rules);
@@ -15,8 +15,11 @@ export default (rules, makeData) => {
     if (String(correctAnswer) === userAnswer) {
       console.log('Correct!');
     } else {
-      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${userName}`);
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\n`);
+      console.log(`Let's try again, ${userName}`);
+      return;
     }
   }
-  return console.log(`Congratulations, ${userName}!`);
+
+  console.log(`Congratulations, ${userName}!`);
 };

@@ -1,13 +1,15 @@
-import { randomNumber, isEven } from '../ utilities';
+import getRandomNumber from '../ utilities';
 import generateGame from '..';
 
-const rule = 'Answer "yes" if number even otherwise answer "no". \n';
+const gameDescription = 'Answer "yes" if number even otherwise answer "no". \n';
+
+const isEven = num => num % 2 === 0;
 
 const makeData = () => {
-  const gameNumber = randomNumber(1, 1000);
-  const question = `${gameNumber}`;
-  const correctAnswer = isEven(gameNumber) ? 'yes' : 'no';
+  const isEvenNumber = getRandomNumber(1, 1000);
+  const question = `${isEvenNumber}`;
+  const correctAnswer = isEven(isEvenNumber) ? 'yes' : 'no';
   return { question, correctAnswer };
 };
 
-export default () => generateGame(rule, makeData);
+export default () => generateGame(gameDescription, makeData);
