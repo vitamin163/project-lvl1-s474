@@ -7,9 +7,8 @@ const lengthProgression = 10;
 
 const makeProgression = (startElement, diff) => {
   const progression = [];
-  progression[0] = startElement;
-  for (let positionElement = 1; positionElement <= lengthProgression; positionElement += 1) {
-    progression[positionElement] = progression[positionElement - 1] + diff;
+  for (let positionElement = 0; positionElement <= lengthProgression; positionElement += 1) {
+    progression[positionElement] = startElement + diff * positionElement;
   }
   return progression;
 };
