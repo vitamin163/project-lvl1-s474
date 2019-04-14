@@ -19,9 +19,9 @@ const makeData = () => {
   const hiddenElementPosition = getRandomNumber(1, 11);
 
   const progression = makeProgression(firstElement, elementsDifference);
-  const correctAnswer = progression[hiddenElementPosition];
+  const correctAnswer = String(progression[hiddenElementPosition]);
   progression[hiddenElementPosition] = '..';
-  const question = `${progression}`;
+  const question = progression.join(' ');
   return { question, correctAnswer };
 };
 

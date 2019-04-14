@@ -20,7 +20,7 @@ $ npm install brain-games-vitamin -g
 [![asciicast](https://asciinema.org/a/T00E4wx7mYpQK7iiXGTJ4cRmy.svg)](https://asciinema.org/a/T00E4wx7mYpQK7iiXGTJ4cRmy)
 
 ## Run game "brain-progression"
-[![asciicast](https://asciinema.org/a/IGCa5DIwRBGYhpahDZzYZzw6H.svg)](https://asciinema.org/a/IGCa5DIwRBGYhpahDZzYZzw6H)
+[![asciicast](https://asciinema.org/a/N3udE1GEgVQDKpbPD1RXLCuCn.svg)](https://asciinema.org/a/N3udE1GEgVQDKpbPD1RXLCuCn)
 
 ## Run game "brain-prime"
 [![asciicast](https://asciinema.org/a/pwDu5Rz3whmIisYKAOAXQB8Kp.svg)](https://asciinema.org/a/pwDu5Rz3whmIisYKAOAXQB8Kp)

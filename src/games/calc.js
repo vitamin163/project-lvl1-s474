@@ -9,11 +9,17 @@ const makeData = () => {
   const operandA = getRandomNumber(1, 100);
   const operandB = getRandomNumber(1, 100);
   const question = `${operandA} ${operators[randomOperation]} ${operandB}`;
-  const sumOfOperands = operandA + operandB;
-  const differenceOfOperands = operandA - operandB;
-  const productOfOperands = operandA * operandB;
-  const operations = [sumOfOperands, differenceOfOperands, productOfOperands];
-  const correctAnswer = operations[randomOperation];
+  let correctAnswer;
+  switch (randomOperation) {
+    case 0:
+      correctAnswer = String(operandA + operandB);
+      break;
+    case 1:
+      correctAnswer = String(operandA - operandB);
+      break;
+    default:
+      correctAnswer = String(operandA * operandB);
+  }
   return { question, correctAnswer };
 };
 
