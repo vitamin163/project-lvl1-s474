@@ -1,6 +1,6 @@
 {
   "name": "brain-games-vitamin",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "A set of mini brain-games launched from the console",
   "main": "",
   "bin": {

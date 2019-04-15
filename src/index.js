@@ -3,10 +3,10 @@ import readlineSync from 'readline-sync';
 const numberOfRounds = 3;
 export default (gameDescription, makeData) => {
   console.log('Welcome to the Brain Games!');
-  console.log(`${gameDescription} \n`);
+  console.log(`${gameDescription}\n`);
 
   const userName = readlineSync.question('May I have your name?: ');
-  console.log(`Hello, ${userName}! \n`);
+  console.log(`Hello, ${userName}!\n`);
 
   for (let i = 0; i < numberOfRounds; i += 1) {
     const { question, correctAnswer } = makeData();

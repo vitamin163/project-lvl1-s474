@@ -3,22 +3,25 @@ import generateGame from '..';
 
 const gameDescription = 'What is the result of the expression?';
 
+const operators = ['+', '-', '*'];
+
 const makeData = () => {
-  const operators = ['+', '-', '*'];
   const randomOperation = getRandomNumber(0, operators.length);
   const operandA = getRandomNumber(1, 100);
   const operandB = getRandomNumber(1, 100);
   const question = `${operandA} ${operators[randomOperation]} ${operandB}`;
   let correctAnswer;
-  switch (randomOperation) {
-    case 0:
+  switch (operators[randomOperation]) {
+    case '+':
       correctAnswer = String(operandA + operandB);
       break;
-    case 1:
+    case '-':
       correctAnswer = String(operandA - operandB);
       break;
-    default:
+    case '*':
       correctAnswer = String(operandA * operandB);
+      break;
+    default:
   }
   return { question, correctAnswer };
 };
