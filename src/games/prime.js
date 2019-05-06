@@ -1,4 +1,4 @@
-import getRandomNumber from '../ utilities';
+import getRandomNumber from '../getRandomNumber';
 import generateGame from '..';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';

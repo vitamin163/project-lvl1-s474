@@ -1,4 +1,4 @@
-import getRandomNumber from '../ utilities';
+import getRandomNumber from '../getRandomNumber';
 import generateGame from '..';
 
 const gameDescription = 'What is the result of the expression?';
